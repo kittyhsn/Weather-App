@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="draft">
@@ -28,18 +29,17 @@
             placeholder="Enter the city here.."
           />
           <button>Search</button>
+          <button id="current">Current</button>
         </form>
 
         <h3>Kraków</h3>
         <h6 id="current-date">Friday, 11:03</h6>
         <p class="weather-today">🌧</p>
-        <ul class="temperature-today">
-          <li>18°C</li>
-          <li>64°F</li>
-          <hr class="seperate" />
-          <li>5°C</li>
-          <li>41°F</li>
-        </ul>
+        <h2 id="currentTemp">
+          18 
+          <a href="" class="degree"> °C</a> 
+          <a href="" class="degree"> °F <a/>
+        </h2>
 
         <hr class="next" />
 

@@ -38,6 +38,10 @@ button:hover {
   transition: ease-in-out 200ms;
 }
 
+#github {
+  text-align: center;
+}
+
 .container {
   background: linear-gradient(
     179.1deg,

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="draft">
+      <div class="container">
+        <form id="search-form">
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Enter the city here.."
+          />
+          <button>Search</button>
+        </form>
+
+        <h3>Kraków</h3>
+        <h6 id="current-date">Friday, 11:03</h6>
+        <p class="weather-today">🌧</p>
+        <ul class="temperature-today">
+          <li>18°C</li>
+          <li>64°F</li>
+          <hr class="seperate" />
+          <li>5°C</li>
+          <li>41°F</li>
+        </ul>
+
+        <hr class="next" />
+
+        <div class="row row-cols-5">
+          <div class="col">
+            <strong> Friday</strong>
+            <div class="row">
+              <div class="col-1 condition">⛅️</div>
+              <div class="col-2">20°C 11°F</div>
+            </div>
+          </div>
+          <div class="col">
+            <strong> Saturday</strong>
+            <div class="row">
+              <div class="col-1 condition">🌧</div>
+              <div class="col-2">21°C 11°C</div>
+            </div>
+          </div>
+          <div class="col">
+            <strong> Sunday</strong>
+            <div class="row">
+              <div class="col-1 condition">🌧</div>
+              <div class="col-2">17°C 7°C</div>
+            </div>
+          </div>
+          <div class="col">
+            <strong> Monday</strong>
+            <div class="row">
+              <div class="col-1 condition">🌤</div>
+              <div class="col-2">23°C 12°C</div>
+            </div>
+          </div>
+          <div class="col">
+            <strong> Tuesday</strong>
+            <div class="row">
+              <div class="col-1 condition">🌧</div>
+              <div class="col-2">19°C 9°C</div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="row row-cols-5">
+          <div class="col">50%💧</div>
+          <div class="col">80%💧</div>
+          <div class="col">50%💧</div>
+          <div class="col">50%💧</div>
+          <div class="col">20%💧</div>
+          <div class="col">80%💧</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

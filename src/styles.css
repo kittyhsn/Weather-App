@@ -40,6 +40,8 @@ button:hover {
 
 #github {
   text-align: center;
+  margin: 20px;
+  font-size: 10px;
 }
 
 .shiny-sun {

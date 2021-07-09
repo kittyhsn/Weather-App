@@ -42,6 +42,13 @@ button:hover {
   text-align: center;
 }
 
+.shiny-sun {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 60px;
+}
+
 .container {
   background: linear-gradient(
     179.1deg,

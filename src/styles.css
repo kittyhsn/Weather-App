@@ -4,24 +4,24 @@ body {
   margin-top: 20px;
 }
 
-form {
-  text-align: center;
-}
 input {
   background-color: transparent;
-  width: 80%;
+  width: 70%;
   border-radius: 20px;
   border: 1px solid #92a8d0;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 h2 {
   text-align: center;
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
   margin-top: 15px;
+  margin-left: 10px;
+  font-size: 34px;
 }
 h6 {
   text-align: center;
@@ -38,6 +38,18 @@ button:hover {
   transition: ease-in-out 200ms;
 }
 
+.temp {
+  font-size: 60px;
+}
+
+#current {
+  margin: 10px;
+}
+#current-date {
+  text-align: left;
+  margin-left: 10px;
+}
+
 #github {
   text-align: center;
   margin: 20px;
@@ -45,7 +57,7 @@ button:hover {
 }
 
 .shiny-sun {
-  display: block;
+  display: inline;
   margin: 0 auto;
   padding: 20px;
   font-size: 60px;
@@ -74,8 +86,6 @@ button:hover {
   text-align: center;
   font-size: 60px;
 }
-.currentTemp {
-  text-align: center;
-  list-style: none;
-  padding: 0;
+#current-temp {
+  display: inline;
 }

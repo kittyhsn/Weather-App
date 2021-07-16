@@ -6,7 +6,7 @@ body {
 
 input {
   background-color: transparent;
-  width: 70%;
+  width: 60%;
   border-radius: 20px;
   border: 1px solid #92a8d0;
   margin-top: 20px;
@@ -21,7 +21,7 @@ h3 {
   text-align: left;
   margin-top: 15px;
   margin-left: 10px;
-  font-size: 34px;
+  font-size: 40px;
 }
 h6 {
   text-align: center;
@@ -37,9 +37,8 @@ button:hover {
   color: #f7dddc;
   transition: ease-in-out 200ms;
 }
-
-.temp {
-  font-size: 60px;
+ul {
+  list-style: none;
 }
 
 #current {
@@ -54,6 +53,28 @@ button:hover {
   text-align: center;
   margin: 20px;
   font-size: 10px;
+}
+
+#specifics {
+  position: relative;
+  right: 20px;
+  top: 90px;
+  color: #faefef;
+  list-style: none;
+  font-size: smaller;
+}
+
+#degrees {
+  position: relative;
+  top: -30px;
+}
+
+.image {
+  width: 170px;
+}
+.temp {
+  font-size: 90px;
+  text-align: center;
 }
 
 .shiny-sun {
@@ -86,6 +107,14 @@ button:hover {
   text-align: center;
   font-size: 60px;
 }
-#current-temp {
-  display: inline;
+
+.weatherImg {
+  margin-left: 21px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.nextTemp {
+  margin-left: 11px;
+  font-size: 13px;
 }

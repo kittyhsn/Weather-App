@@ -34,68 +34,59 @@
         <h3>Kraków</h3>
         <h6 id="current-date">Friday, 11:03</h6>
         <div class="row">
-          <div class="col-6" id="current-temp">
-            <img src="src/images/white moon.png" alt="clear" />
-            <strong class="temp">12</strong> <a href="" id="celsius">°C </a>|
-            <a href="" id="fahrenheit">°F</a>
+          <div class="col" id="current-temp">
+            <img src="src/images/256.png" class="image" alt="clear" />
+          </div>
+          <div class="col" id="degrees">
+            <strong class="temp">12</strong>
+            <span id="up"
+              ><a href="" id="celsius">°C </a>|
+              <a href="" id="fahrenheit">°F</a>
+            </span>
+          </div>
+          <div class="col" id="specifics">
+            <ul>
+              <li><span id="humidity">Humidity:</span> %</li>
+              <li><span id="wind">Wind:</span> m/h</li>
+              <li><span id="ain ">Precipitation:</span> %</li>
+            </ul>
           </div>
         </div>
-        <div class="col-6">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> m/h</li>
-          </ul>
-        </div>
-
         <hr class="next" />
 
-        <div class="row row-cols-5">
+        <div class="row">
           <div class="col">
-            <strong> Friday</strong>
-            <div class="row">
-              <div class="col-1 condition">⛅️</div>
-              <div class="col-2">20°C 11°F</div>
-            </div>
+            <strong class="weekDay"> Friday</strong>
+
+            <div class="weatherImg">⛅️</div>
+            <div class="nextTemp">20°C</div>
           </div>
           <div class="col">
-            <strong> Saturday</strong>
-            <div class="row">
-              <div class="col-1 condition">🌧</div>
-              <div class="col-2">21°C 11°C</div>
-            </div>
+            <strong class="weekDay"> Saturday</strong>
+
+            <div class="weatherImg">⛅️</div>
+            <div class="nextTemp">20°C</div>
           </div>
           <div class="col">
-            <strong> Sunday</strong>
-            <div class="row">
-              <div class="col-1 condition">🌧</div>
-              <div class="col-2">17°C 7°C</div>
-            </div>
+            <strong class="weekDay"> Sunday</strong>
+
+            <div class="weatherImg">⛅️</div>
+            <div class="nextTemp">20°C</div>
           </div>
           <div class="col">
-            <strong> Monday</strong>
-            <div class="row">
-              <div class="col-1 condition">🌤</div>
-              <div class="col-2">23°C 12°C</div>
-            </div>
+            <strong class="weekDay"> Monday</strong>
+
+            <div class="weatherImg">⛅️</div>
+            <div class="nextTemp">20°C</div>
           </div>
           <div class="col">
-            <strong> Tuesday</strong>
-            <div class="row">
-              <div class="col-1 condition">🌧</div>
-              <div class="col-2">19°C 9°C</div>
-            </div>
+            <strong class="weekDay"> Tuesday</strong>
+
+            <div class="weatherImg">⛅️</div>
+            <div class="nextTemp">20°C</div>
           </div>
         </div>
         <br />
-
-        <div class="row row-cols-5">
-          <div class="col">50%💧</div>
-          <div class="col">80%💧</div>
-          <div class="col">50%💧</div>
-          <div class="col">50%💧</div>
-          <div class="col">20%💧</div>
-          <div class="col">80%💧</div>
-        </div>
       </div>
       <p id="github">
         Coded by Katarzyna Hassan, open-source on

@@ -29,7 +29,7 @@ currentTime.innerHTML = `${days[day]} ${hours}:${minutes}`;
 function displayData(response) {
   let h3 = document.querySelector("h3");
   h3.innerHTML = response.data.name;
-  let currentTemp = document.querySelector("h2");
+  let currentTemp = document.querySelector(".temp");
   currentTemp.innerHTML = Math.round(response.data.main.temp);
 }
 

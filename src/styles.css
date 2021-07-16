@@ -33,8 +33,8 @@ button {
   border-radius: 10px;
 }
 button:hover {
-  background-color: #92a8d0;
-  color: #f7dddc;
+  background-color: #f7dddc;
+  color: #92a8d0;
   transition: ease-in-out 200ms;
 }
 ul {
@@ -52,53 +52,51 @@ ul {
 #github {
   text-align: center;
   margin: 20px;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 #specifics {
-  position: relative;
-  right: 20px;
-  top: 90px;
-  color: #faefef;
+  color: #333333;
   list-style: none;
   font-size: smaller;
 }
 
 #degrees {
   position: relative;
-  top: -30px;
+  bottom: -30px;
+  color: #333333;
+}
+#celsius,
+#fahrenheit {
+  color: #f5a4d2;
+}
+
+#fahrenheit:hover {
+  color: #b283fe;
+  text-decoration: none;
+}
+#celsius:hover {
+  color: #b283fe;
+  text-decoration: none;
 }
 
 .image {
   width: 170px;
 }
 .temp {
-  font-size: 90px;
+  font-size: 70px;
   text-align: center;
-}
-
-.shiny-sun {
-  display: inline;
-  margin: 0 auto;
-  padding: 20px;
-  font-size: 60px;
+  position: relative;
+  bottom: -70px;
 }
 
 .container {
-  background: linear-gradient(
-    179.1deg,
-    rgb(247, 238, 238) -1.9%,
-    rgb(247, 202, 201) 44.9%,
-    rgb(145, 168, 208) 96.1%
-  );
   border: 1px solid #92a8d0;
   border-radius: 5px;
   max-width: max-content;
-  box-shadow: 5px 5px 5px #b3b3cd;
+  box-shadow: 5px 5px 5px #f7dddc;
 }
-.seperate {
-  width: 20%;
-}
+
 .next {
   border-top: 1px solid #f7d8d7;
   margin-bottom: 20px;
@@ -117,4 +115,12 @@ ul {
 .nextTemp {
   margin-left: 11px;
   font-size: 13px;
+}
+
+.link {
+  color: #f5a4d2;
+}
+.link:hover {
+  color: #92a8d0;
+  text-decoration: none;
 }

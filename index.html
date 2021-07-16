@@ -31,7 +31,11 @@
           <button id="search">Search</button>
           <button id="current">Current</button>
         </form>
-        <h3>Kraków</h3>
+        <div class="row">
+          <div class="col" id="main-city">Kraków</div>
+          <div class="col" id="main-city">Clouds</div>
+        </div>
+
         <h6 id="current-date">Friday, 11:03</h6>
         <div class="row">
           <div class="col" id="current-temp">
@@ -46,9 +50,9 @@
           </div>
           <div class="col" id="specifics">
             <ul>
-              <li><span id="humidity">Humidity:</span> %</li>
-              <li><span id="wind">Wind:</span> m/h</li>
-              <li><span id="ain ">Precipitation:</span> %</li>
+              <li id="rain">Precipitation: %</li>
+              <li id="humidity">Humidity: %</li>
+              <li id="wind">Wind: m/h</li>
             </ul>
           </div>
         </div>

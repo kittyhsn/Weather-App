@@ -24,13 +24,25 @@ let days = [
 
 currentTime.innerHTML = `${days[day]} ${hours}:${minutes}`;
 
-//now
+//display temperature by writing the city
 
 function displayData(response) {
-  let h3 = document.querySelector("h3");
-  h3.innerHTML = response.data.name;
+  let mainCity = document.querySelector("h3");
+  mainCity.innerHTML = response.data.name;
   let currentTemp = document.querySelector(".temp");
   currentTemp.innerHTML = Math.round(response.data.main.temp);
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.weather[0].description;
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity;
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = response.data.wind.speed;
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
 }
 
 function fetchData(event) {
@@ -44,7 +56,7 @@ function fetchData(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", fetchData);
 
-//currentButton
+//displaying temp and city by current button
 
 function searchLocation(position) {
   let apiKey = "8c77dcd79b440a9f66da7835894f7c98";
@@ -60,3 +72,7 @@ function fetchLocation(event) {
 
 let currentButton = document.querySelector("#current");
 currentButton.addEventListener("click", fetchLocation);
+
+//display conditions
+//unit conversion
+//weather describtion

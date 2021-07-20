@@ -17,16 +17,6 @@ h2 {
   text-align: center;
 }
 
-#main-city {
-  text-align: left;
-  margin-top: 15px;
-  margin-left: 10px;
-  font-size: 40px;
-}
-#description {
-  font-size: 50px;
-}
-
 h6 {
   text-align: center;
   margin-bottom: 10px;
@@ -43,6 +33,18 @@ button:hover {
 }
 ul {
   list-style: none;
+}
+h3 {
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 45px;
+}
+
+#description {
+  font-size: 12px;
+  margin-left: 10px;
+  text-transform: capitalize;
 }
 
 #current {
@@ -61,16 +63,16 @@ ul {
 
 #specifics {
   position: relative;
-  top: 90px;
-  right: 30px;
+  top: 25px;
+  text-align: left;
   color: #333333;
   list-style: none;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 #degrees {
   position: relative;
-  bottom: -30px;
+  top: -40px;
   color: #333333;
   font-size: 15px;
 }
@@ -88,21 +90,17 @@ ul {
   text-decoration: none;
 }
 
-.image {
-  width: 170px;
-}
 .temp {
   font-size: 70px;
   text-align: center;
-  position: relative;
-  bottom: -70px;
 }
 
 .container {
   border: 1px solid #92a8d0;
   border-radius: 5px;
-  max-width: max-content;
+  max-width: 600px;
   box-shadow: 5px 5px 5px #f7dddc;
+  border-width: ;
 }
 
 .next {

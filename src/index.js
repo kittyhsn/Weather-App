@@ -30,7 +30,7 @@ function displayData(response) {
   let mainCity = document.querySelector("h3");
   mainCity.innerHTML = response.data.name;
   let currentTemp = document.querySelector(".temp");
-  currentTemp.innerHTML = Math.round(response.data.main.temp);
+  currentTemp.innerHTML = Math.round(celsiusTemperature);
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
   let humidity = document.querySelector("#humidity");
@@ -43,6 +43,8 @@ function displayData(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   icon.setAttribute("alt", response.data.weather[0].description);
+
+  celsiusTemperature = response.data.main.temp;
 }
 
 function fetchData(event) {
@@ -73,6 +75,17 @@ function fetchLocation(event) {
 let currentButton = document.querySelector("#current");
 currentButton.addEventListener("click", fetchLocation);
 
-//display conditions
 //unit conversion
-//weather describtion
+
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+
+  let temperature = document.querySelector(".temp");
+  temperature.innerHTML = Math.round(fahrenheitTemp);
+}
+
+let celsiusTemperature = null;
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", displayFahrenheitTemp);

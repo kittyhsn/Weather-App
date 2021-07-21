@@ -84,8 +84,16 @@ function displayFahrenheitTemp(event) {
   let temperature = document.querySelector(".temp");
   temperature.innerHTML = Math.round(fahrenheitTemp);
 }
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+  let celsiusTemp = document.querySelector(".temp");
+  celsiusTemp.innerHTML = Math.round(celsiusTemperature);
+}
 
 let celsiusTemperature = null;
 
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", displayFahrenheitTemp);
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", displayCelsiusTemp);

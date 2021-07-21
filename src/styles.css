@@ -84,10 +84,12 @@ h3 {
 #fahrenheit:hover {
   color: #b283fe;
   text-decoration: none;
+  cursor: default;
 }
 #celsius:hover {
   color: #b283fe;
   text-decoration: none;
+  cursor: default;
 }
 
 .temp {

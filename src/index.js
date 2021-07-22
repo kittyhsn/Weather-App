@@ -30,7 +30,7 @@ function displayData(response) {
   let mainCity = document.querySelector("h3");
   mainCity.innerHTML = response.data.name;
   let currentTemp = document.querySelector(".temp");
-  currentTemp.innerHTML = Math.round(celsiusTemperature);
+  currentTemp.innerHTML = Math.round(response.data.main.temp);
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
   let humidity = document.querySelector("#humidity");

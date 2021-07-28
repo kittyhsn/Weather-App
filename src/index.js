@@ -24,6 +24,14 @@ let days = [
 
 currentTime.innerHTML = `${days[day]} ${hours}:${minutes}`;
 
+//forecast
+
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = "Forecast";
+}
+displayForecast();
+
 //display temperature by writing the city
 
 function displayData(response) {

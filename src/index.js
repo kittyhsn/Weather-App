@@ -81,6 +81,7 @@ function getForecast(coordinates) {
 //display temperature by writing the city
 
 function displayData(response) {
+  console.log(response);
   let mainCity = document.querySelector("h3");
   mainCity.innerHTML = response.data.name;
   let currentTemp = document.querySelector(".temp");

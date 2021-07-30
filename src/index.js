@@ -107,14 +107,17 @@ function displayData(response) {
 function fetchData(event) {
   event.preventDefault();
   let cityName = document.querySelector("#city-input").value;
-  let apiKey = "8c77dcd79b440a9f66da7835894f7c98";
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
-  axios.get(url).then(displayData);
+  searchCity(cityName);
 }
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", fetchData);
 
+function searchCity(city) {
+  let apiKey = "8c77dcd79b440a9f66da7835894f7c98";
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(url).then(displayData);
+}
+searchCity("Kraków");
 //displaying temp and city by current button
 
 function searchLocation(position) {

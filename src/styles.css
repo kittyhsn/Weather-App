@@ -8,13 +8,10 @@ input {
   background-color: transparent;
   width: 60%;
   border-radius: 20px;
-  border: 1px solid #92a8d0;
+  border: 1px solid #c3b3ef;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
-}
-h2 {
-  text-align: center;
 }
 
 h6 {
@@ -116,21 +113,6 @@ h3 {
 .next {
   border-top: 1px solid #f7d8d7;
   margin-bottom: 20px;
-}
-.weather-today {
-  text-align: center;
-  font-size: 60px;
-}
-
-.weatherImg {
-  margin-left: 21px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.nextTemp {
-  margin-left: 11px;
-  font-size: 13px;
 }
 
 .link {

@@ -2,13 +2,13 @@ body {
   font-family: "Nova Mono", monospace;
   color: #333333;
   margin-top: 20px;
-  background-image: url("/Users/Kasiulka/Desktop/SheCodesworkshop/Plus/github/weather-app/src/images/day.png");
 }
 
 input {
-  width: 60%;
+  background-color: whitesmoke;
+  width: 70%;
   border-radius: 20px;
-  border: 1px solid #c3b3ef;
+  border: 1px solid #45171d;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
@@ -20,12 +20,12 @@ h6 {
 }
 button {
   background-color: transparent;
-  border: 1px solid #92a8d0;
+  border: 1px solid #e84a5f;
   border-radius: 10px;
 }
 button:hover {
-  background-color: #f7dddc;
-  color: #92a8d0;
+  background-color: #e84a5f;
+  color: #f7dddc;
   transition: ease-in-out 200ms;
 }
 ul {
@@ -42,7 +42,7 @@ h3 {
   font-size: 12px;
   margin-left: 10px;
   text-transform: capitalize;
-  opacity: 0.5;
+  color: #e84a5f;
 }
 
 #current {
@@ -62,12 +62,11 @@ h3 {
 #specifics {
   position: relative;
   top: 25px;
-  left: 50px;
+  left: 30px;
   text-align: left;
-  color: #333333;
+  color: #e84a5f;
   list-style: none;
-  font-size: 11px;
-  opacity: 0.5;
+  font-size: 12px;
 }
 
 #degrees {
@@ -78,16 +77,16 @@ h3 {
 }
 #celsius,
 #fahrenheit {
-  color: #f5a4d2;
+  color: #ff847c;
 }
 
 #fahrenheit:hover {
-  color: #b283fe;
+  color: #e84a5f;
   text-decoration: none;
   cursor: default;
 }
 #celsius:hover {
-  color: #b283fe;
+  color: #e84a5f;
   text-decoration: none;
   cursor: default;
 }
@@ -96,6 +95,9 @@ h3 {
   display: block;
   margin: 0 auto;
   width: 200px;
+  border: 1px solid #fecea8;
+  border-radius: 50%;
+  background-color: #fecea8;
 }
 
 .temp {
@@ -104,22 +106,24 @@ h3 {
 }
 
 .container {
-  border: 1px solid #92a8d0;
-  border-radius: 5px;
+  border: 2px solid #45171d;
+  border-radius: 15px;
   max-width: 600px;
-  box-shadow: 5px 5px 5px #f7dddc;
+  box-shadow: 60px -16px #ff847c;
+  background-color: #f8f8f8;
 }
 
 .next {
-  border-top: 1px solid #f7d8d7;
+  border-top: 1px solid #45171d;
   margin-bottom: 20px;
+  opacity: 0.4;
 }
 
 .link {
-  color: #f5a4d2;
+  color: #ff847c;
 }
 .link:hover {
-  color: #92a8d0;
+  color: #e84a5f;
   text-decoration: none;
 }
 
@@ -127,13 +131,13 @@ h3 {
   margin-top: 20px;
   margin-left: 70px;
   text-align: center;
-  color: #000;
+
   margin-bottom: 20px;
 }
 
 .weather-forecast-date {
+  color: #45171d;
   font-size: 16px;
-  opacity: 0.5;
 }
 
 .weather-forecast-temperature-min {

@@ -1,14 +1,14 @@
 body {
   font-family: "Nova Mono", monospace;
   color: #333333;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 input {
   background-color: whitesmoke;
   width: 70%;
   border-radius: 20px;
-  border: 1px solid #45171d;
+  border: 1px solid #a2ac77;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
@@ -20,14 +20,15 @@ h6 {
 }
 button {
   background-color: transparent;
-  border: 1px solid #e84a5f;
+  border: 1px solid #a2ac77;
   border-radius: 10px;
 }
 button:hover {
-  background-color: #e84a5f;
-  color: #f7dddc;
+  background-color: #a2ac77;
+  color: whitesmoke;
   transition: ease-in-out 200ms;
 }
+
 ul {
   list-style: none;
 }
@@ -36,6 +37,9 @@ h3 {
   margin-top: 15px;
   margin-left: 10px;
   font-size: 45px;
+  border: 1px solid #dfc1cc;
+  border-radius: 50% / 100% 100% 20% 0;
+  background-color: #dfc1cc;
 }
 
 #description {
@@ -95,9 +99,9 @@ h3 {
   display: block;
   margin: 0 auto;
   width: 200px;
-  border: 1px solid #fecea8;
+  border: 1px solid #1b3f66;
   border-radius: 50%;
-  background-color: #fecea8;
+  background-color: #1b3f66;
 }
 
 .temp {
@@ -106,11 +110,11 @@ h3 {
 }
 
 .container {
-  border: 2px solid #45171d;
-  border-radius: 15px;
+  border: 3px solid #45171d;
+  border-radius: 10px 20px 30px 40px/30px;
   max-width: 600px;
-  box-shadow: 60px -16px #ff847c;
-  background-color: #f8f8f8;
+  box-shadow: 60px -16px #e6584f;
+  background-color: #f4f3ed;
 }
 
 .next {
@@ -131,8 +135,10 @@ h3 {
   margin-top: 20px;
   margin-left: 70px;
   text-align: center;
-
   margin-bottom: 20px;
+  border: 1px solid #f2db8d;
+  border-radius: 30% 70% 70% 20% / 20%;
+  background-color: #f2db8d;
 }
 
 .weather-forecast-date {
